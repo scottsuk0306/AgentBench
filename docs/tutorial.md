@@ -340,7 +340,7 @@ pip install -r src/tasks/os_interaction/requirements.txt
 Create local images. This process may takes 5 ~ 10 minutes.
 
 ```bash
-python src/tasks/os_interaction/images.py build -c configs/tasks/os_interaction/std.yaml -r .
+python src/tasks/os_interaction/images.py build -c configs/tasks/os_interaction/dev.yaml -r .
 ```
 
 Run the following command to verify that you have successfully prepared the requirements.
@@ -391,12 +391,6 @@ python evaluate.py \
     --task configs/tasks/knowledgegraph/dev.yaml \
     --agent configs/agents/local/do_nothing_agent.yaml \
     --workers 30
-```
-
-### Step 4. Prepare the Docker Images for Each Task
-
-```bash
-bash scripts/build_docker.sh
 ```
 
 ## 2. Implement Your Agent
